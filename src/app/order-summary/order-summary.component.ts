@@ -8,18 +8,21 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class OrderSummaryComponent {
   quantity: number;
-  selectedFlavour = '';
+  selectedFlavour: string = '';
+  subtotal: number = 0;
 
-  constructor(private navigator: Router, private route: ActivatedRoute) {
+  constructor(private router: Router, private route: ActivatedRoute) {
     this.quantity = +this.route.snapshot.paramMap.get('quantity')! || 0;
     this.selectedFlavour = this.route.snapshot.paramMap.get('selectedFlavour') || '';
+    this.subtotal = +this.route.snapshot.paramMap.get('subtotal')! || 0;
+    this.subtotal = this.quantity;
   }
 
-  navigateBackToFlavourSelection(): void {
-    this.navigator.navigate(['/flavour-selection', this.quantity]);
+  goBack(): void {
+    this.router.navigate(['/flavour-selection', this.quantity]);
   }
 
-  finalizeOrder(): void {
-    console.log('Order finalized');
+  sendOrder(): void {
+    alert('Order sent');
   }
 }

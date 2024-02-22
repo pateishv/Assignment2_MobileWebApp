@@ -1,1 +1,24 @@
-<p>order-summary works!</p>
+<!-- third-page.component.html -->
+<div class="container">
+  <a class="back-arrow" (click)="goBack()">&#8592;</a>
+  <h2>Order Summary:</h2>
+  <p>Thank you for choosing Cupcake online App!</p>
+  <div class="order-details">
+    <div class="detail">
+      <span class="label">Number of Cupcakes:</span>
+      <span>{{ quantity }}</span>
+    </div>
+    <div class="detail">
+      <span class="label">Selected Flavour:</span>
+      <span>{{ selectedFlavour }}</span>
+    </div>
+    <div class="detail">
+      <span class="label">Subtotal:</span>
+      <span>${{ subtotal }}</span>
+    </div>
+  </div>
+  <div class="actions">
+    <button class="cancel-btn" (click)="goBack()">Cancel Order</button>
+    <button class="order-btn" (click)="sendOrder()">Place Order</button>
+  </div>
+</div>

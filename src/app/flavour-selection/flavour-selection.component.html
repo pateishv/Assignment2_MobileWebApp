@@ -1,1 +1,16 @@
-<p>flavour-selection works!</p>
+<!-- flavour-selection.component.html -->
+<div class="container">
+  <a class="back-arrow" (click)="goBack()">&#8592;</a>
+  <h2>Select cupcake options:</h2>
+  <p>Subtotal: ${{ subtotal }}</p>
+
+  <div class="flavour-options">
+    <label *ngFor="let flavour of flavours">
+      <input type="radio" name="flavour" [value]="flavour" (change)="selectFlavour(flavour)">
+      {{ flavour }}
+    </label>
+  </div>
+
+  <button (click)="goBack()">Cancel</button>
+  <button (click)="goToSummary()">Next</button>
+</div>

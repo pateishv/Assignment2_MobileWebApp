@@ -7,9 +7,9 @@ import { Router } from '@angular/router';
   styleUrls: ['./quantity-selection.component.css'],
 })
 export class QuantitySelectionComponent {
-  constructor(private navigator: Router) {}
+  constructor(private router: Router) {}
 
-  navigateToFlavorSelection(quantity: number): void {
-    this.navigator.navigate(['/flavor-selection', quantity]);
+  navigateToFlavourSelection(quantity: number): void {
+    this.router.navigate([`/flavour-selection/${quantity}`]);
   }
 }
