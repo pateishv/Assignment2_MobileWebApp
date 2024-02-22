@@ -19,7 +19,7 @@ export class OrderSummaryComponent {
   }
 
   goBack(): void {
-    this.router.navigate(['/flavour-selection', this.quantity]);
+    this.router.navigate(['/quantity-selection']);
   }
 
   sendOrder(): void {

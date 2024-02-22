@@ -1,0 +1,73 @@
+.container {
+  text-align: center;
+  margin-top: 50px;
+  font-family: Calibri;
+}
+
+h2 {
+  font-size: 24px;
+  color: brown;
+  font-family: Calibri;
+}
+
+.cupcake-image {
+  width: 200px;
+  height: auto;
+  margin-top: 20px;
+}
+
+.button-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+p {
+  text-align: right;
+  font-size: 25px;
+  color: #e1914f;
+  font-family: Calibri;
+}
+
+button {
+  display: inline-block;
+  width: 200px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: yellow;
+  color: #f5072f;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px;
+  transition: background-color 0.3s ease;
+  font-family: Calibri;
+}
+
+button:hover {
+  background-color: #f3d61d;
+}
+
+label {
+  color: brown;
+  display: block;
+  margin-bottom: 25px;
+  font-family: Calibri;
+  font-size: 18px;
+}
+
+.back-arrow,
+h2 {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  font-family: Calibri;
+}
+
+.back-arrow {
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+  margin-right: 10px;
+  cursor: pointer;
+}

@@ -1,0 +1,41 @@
+.container {
+  text-align: center;
+  margin-top: 50px;
+  font-family: Calibri;
+}
+
+h2 {
+  font-size: 33px;
+  color: brown;
+  font-family: Calibri;
+}
+
+.cupcake-image {
+  width: 200px;
+  height: auto;
+  margin-bottom: 47px;
+}
+
+.button-container {
+  margin-top: 20px;
+  font-family: Calibri;
+}
+
+button {
+  display: block;
+  width: 200px;
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: yellow;
+  color: #f61c41;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px auto;
+  transition: background-color 0.3s ease;
+  font-family: Calibri;
+}
+
+button:hover {
+  background-color: #f3d61d;
+}
