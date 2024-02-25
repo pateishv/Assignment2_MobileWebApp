@@ -23,6 +23,6 @@ export class OrderSummaryComponent {
   }
 
   sendOrder(): void {
-    alert('Order sent');
+    alert('Thank you so much for your order!');
   }
 }

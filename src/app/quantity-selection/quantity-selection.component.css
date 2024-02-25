@@ -2,6 +2,7 @@
   text-align: center;
   margin-top: 50px;
   font-family: Calibri;
+
 }
 
 h2 {
@@ -34,7 +35,7 @@ button {
   margin: 10px auto;
   transition: background-color 0.3s ease;
   font-family: Calibri;
-}
+  }
 
 button:hover {
   background-color: #f3d61d;
